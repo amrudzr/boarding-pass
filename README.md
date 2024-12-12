@@ -46,7 +46,7 @@ The project is organized into the following components for better modularity:
 2. **Compile the Code**:
 
    ```bash
-   javac src/model/*.java src/service/*.java src/App.java -d out
+   javac src/main/java/com/boarding/model/*.java src/main/java/com/boarding/service/*.java src/main/java/com/boarding/App.java -d out
    ```
 
 3. **Run the Application**:
