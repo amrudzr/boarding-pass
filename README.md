@@ -1,5 +1,3 @@
-Absolutely, here's the updated README.md with a license section:
-
 ## Boarding Pass Management System
 
 ### **Overview**
