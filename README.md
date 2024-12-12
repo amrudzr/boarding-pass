@@ -52,7 +52,7 @@ The project is organized into the following components for better modularity:
 3. **Run the Application**:
 
    ```bash
-   java -cp out App
+   java -cp out main/java/com/boarding/App
    ```
 
 ### **Contributing**
