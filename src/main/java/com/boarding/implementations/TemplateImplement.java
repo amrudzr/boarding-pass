@@ -1,18 +1,18 @@
-package main.java.com.boarding.service;
+package main.java.com.boarding.implementations;
 
 import java.util.HashMap;
 
-import main.java.com.boarding.model.BoardingPass;
+import main.java.com.boarding.model.Template;
 
-public class BoardingPassService {
-    private HashMap<String, BoardingPass> dataStore = new HashMap<>();
+public class TemplateImplement {
+    private HashMap<String, Template> dataStore = new HashMap<>();
 
     // Tambah data
     public void addBoardingPass(String id, String passengerName, String flightNumber) {
         if (dataStore.containsKey(id)) {
             System.out.println("Boarding pass dengan ID ini sudah ada.");
         } else {
-            BoardingPass pass = new BoardingPass(id, passengerName, flightNumber);
+            Template pass = new Template(id, passengerName, flightNumber);
             dataStore.put(id, pass);
             System.out.println("Boarding pass berhasil ditambahkan.");
         }
@@ -34,14 +34,14 @@ public class BoardingPassService {
             System.out.println("Tidak ada boarding pass yang tersedia.");
         } else {
             System.out.println("=== Daftar Boarding Pass ===");
-            for (BoardingPass pass : dataStore.values()) {
+            for (Template pass : dataStore.values()) {
                 System.out.println(pass);
             }
         }
     }
 
     // Cari data berdasarkan ID
-    public BoardingPass searchBoardingPass(String id) {
+    public Template searchBoardingPass(String id) {
         return dataStore.get(id); // Mengembalikan null jika tidak ditemukan
     }
 }

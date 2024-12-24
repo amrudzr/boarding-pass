@@ -1,11 +1,11 @@
 package main.java.com.boarding.model;
 
-public class BoardingPass {
+public class Template {
     private String id;
     private String passengerName;
     private String flightNumber;
 
-    public BoardingPass(String id, String passengerName, String flightNumber) {
+    public Template(String id, String passengerName, String flightNumber) {
         this.id = id;
         this.passengerName = passengerName;
         this.flightNumber = flightNumber;
